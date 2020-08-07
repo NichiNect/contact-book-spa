@@ -77,3 +77,36 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+------------
+
+## 💻 Install
+
+1. **Clone Repository**
+```bash
+git clone https://github.com/NichiNect/contact-book-spa.git
+cd cd contact-book-spa
+composer install
+npm install
+copy .env.example .env
+```
+
+2. **Buka ```.env``` lalu ubah baris berikut sesuai dengan konfigurasi database**
+```
+DB_PORT=3306
+DB_DATABASE=laravel
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+3. **Instalasi website**
+```bash
+php artisan key:generate
+php artisan migrate
+php artisan db:seed
+```
+
+4. **Run the website**
+```bash
+php artisan serve
+```
